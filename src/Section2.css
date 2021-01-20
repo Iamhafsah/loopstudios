@@ -1,0 +1,76 @@
+.section-2{
+    padding: 7em 11em;
+    
+}
+.img-container{
+    display: flex;
+}
+.game-man{
+    max-width: 45vw;
+    height: 57vh;
+}
+.game-man img{
+    height: 57vh;
+    max-width: 45vw;
+    background-size: cover;
+}
+.interactive-vr-text{
+    max-width: 25vw;
+    padding: 1em 4em;
+    align-self: flex-end;
+    margin-left: -8em;
+    background-color: var(--White);
+    z-index: 2;
+}
+.interactive-vr-text h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 920px){
+    .interactive-vr-text{
+        padding: .5em 5em;
+    }
+}
+
+@media only screen and (max-width: 805px){
+    .section-2{
+        padding: 5em 1em .1em 1em;
+    }
+    .img-container{
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }    
+    .game-man{
+        max-width: 90vw;
+        height: 50vh;
+    }
+    .game-man img{
+        height: 50vh;
+        width: 89vw;
+        max-width: 90vw;
+    }
+    .interactive-vr-text{
+        max-width: 90vw;
+        padding: 1em;
+        align-self: flex-end;
+        margin: auto;
+        text-align: center;
+    }
+    .interactive-vr-text h2{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px){
+    .game-man, .game-man img{
+        height: 40vh;
+    }
+}
